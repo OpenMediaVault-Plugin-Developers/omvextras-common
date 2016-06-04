@@ -1,0 +1,16 @@
+Source: omvextras-common
+Section: net
+Priority: optional
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: omvextras-common
+Architecture: all
+Depends: openmediavault (>= 3.0.15),
+         php-symfony-class-loader,
+         php5-cli,
+         ${misc:Depends}
+Description: Shared files/libraries between various OpenMediaVault plugins.
+ Package containing shared files/libraries between various OpenMediaVault
+ plugins.

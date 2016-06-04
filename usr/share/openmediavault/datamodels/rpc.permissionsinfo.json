@@ -1,0 +1,19 @@
+[{
+    "type": "rpc",
+    "id": "rpc.permissionsinfo.checkuserdirectorypermissions",
+    "params": {
+        "type": "object",
+        "properties": {
+            "username": {
+                "type": "string",
+                "format": "username",
+                "required": true
+            },
+            "uuid": {
+                "type": "string",
+                "format": "uuidv4",
+                "required": true
+            }
+        }
+    }
+}]
