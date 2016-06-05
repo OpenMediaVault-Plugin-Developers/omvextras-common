@@ -1,3 +1,9 @@
+omvextras-common (3.0.1) stable; urgency=medium
+
+  * Add OmvExtras.window.RootFolderBrowser.
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Wed, 08 Jun 2016 16:21:29 +0200
+
 omvextras-common (3.0.0) stable; urgency=low
 
   * Initial release.
