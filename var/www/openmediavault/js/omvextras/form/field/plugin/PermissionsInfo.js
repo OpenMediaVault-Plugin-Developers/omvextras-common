@@ -15,6 +15,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+/**
+ * This plugin displays information about insufficient permissions for a user on
+ * a selected shared folder in an 'OMV.form.field.SharedFolderComboBox'.
+ *
+ * Example configuration for an 'OMV.form.field.SharedFolderComboBox':
+ *
+ *     {
+ *         xtype: 'sharedfoldercombo',
+ *         plugins: [{
+ *             ptype: 'permissionsinfo',
+ *             username: 'username',
+ *             execute: true,
+ *             read: true,
+ *             write: true
+ *         }]
+ *     }
+ */
 Ext.define('OmvExtras.form.field.plugin.PermissionsInfo', {
     extend: 'Ext.plugin.Abstract',
     alias: 'plugin.permissionsinfo',
@@ -56,10 +73,16 @@ Ext.define('OmvExtras.form.field.plugin.PermissionsInfo', {
         this.comboBox.un('change', this._onChange, this);
     },
 
+    /**
+     * @private
+     */
     _afterRender: function(field, eOpts) {
         this.comboBox.on('change', this._onChange, this);
     },
 
+    /**
+     * @private
+     */
     _onChange: function(field, newValue, oldValue, eOpts) {
         if (this.messageElement) {
             this.messageElement.destroy();
@@ -83,6 +106,9 @@ Ext.define('OmvExtras.form.field.plugin.PermissionsInfo', {
         });
     },
 
+    /**
+     * @private
+     */
     _onCheckedPermissions: function(options, success, response) {
         var missingPermissions = [];
 
