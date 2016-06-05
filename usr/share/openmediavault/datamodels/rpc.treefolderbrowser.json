@@ -1,0 +1,13 @@
+[{
+    "type": "rpc",
+    "id": "rpc.treefolderbrowser.get",
+    "params": {
+        "type": "object",
+        "properties": {
+            "path": {
+                "type": "string",
+                "required": true
+            }
+        }
+    }
+}]
