@@ -7,10 +7,11 @@ Standards-Version: 3.9.6
 
 Package: omvextras-common
 Architecture: all
-Depends: openmediavault (>= 3.0.15),
+Depends: openmediavault (>= 4.0.4),
          php-symfony-class-loader,
-         php5-cli,
+         php7.0-cli,
          ${misc:Depends}
+Breaks: openmediavault (<< 4.0)
 Description: Shared files/libraries between various OpenMediaVault plugins.
  Package containing shared files/libraries between various OpenMediaVault
  plugins.

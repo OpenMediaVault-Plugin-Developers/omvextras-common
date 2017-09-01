@@ -1,3 +1,9 @@
+omvextras-common (4.0.0) stable; urgency=low
+
+  * Update for OMV 4.x
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Fri, 01 Sep 2017 12:40:00 -0500
+
 omvextras-common (3.0.1) stable; urgency=medium
 
   * Add OmvExtras.window.RootFolderBrowser.
