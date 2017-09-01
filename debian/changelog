@@ -1,3 +1,9 @@
+omvextras-common (4.0.1) stable; urgency=low
+
+  * Make file executable
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Fri, 01 Sep 2017 12:55:19 -0500
+
 omvextras-common (4.0.0) stable; urgency=low
 
   * Update for OMV 4.x
